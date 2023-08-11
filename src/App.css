@@ -1,39 +1,36 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.app {
+  padding: 20px;
+}
+
+.menu-nav {
+  margin-bottom: 30px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.menu-nav a:first-child {
+  margin-right: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+.menu-nav a.active {
+  color: blue;
 }
 
-.App-header {
-  min-height: 100vh;
+.movies-list,
+.favorites-list {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
-}
-
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+.movie-preview__img {
+  height: 360px;
+  text-align: center;
 }
